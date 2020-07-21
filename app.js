@@ -42,7 +42,9 @@ xlsxFile('./Library.xlsx',{schema}).then(({rows,errors}) => {
             Author: element.Author,
             Title: element.BookTitle,
             Owned:element.Owned,
-            Category:element.Category
+            Category:element.Category,
+            Loan: element.Loan,
+            ReadingNow: element.ReadingNow
         })
         .catch(err=>{
             console.log(err)
